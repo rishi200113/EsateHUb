@@ -50,13 +50,13 @@ if(isset($_GET['email'])) {
         $mail->isSMTP();                                  
         $mail->Host       = 'smtp.gmail.com';             
         $mail->SMTPAuth   = true;                          
-        $mail->Username   = 'rishikeethan3@gmail.com';                 
-        $mail->Password   = 'tqfw vpdx huvk weif';                           
+        $mail->Username   = '@gmail.com';                 
+        $mail->Password   = '';                           
         $mail->SMTPSecure = 'ssl'; 
         $mail->Port       = 465;                            
 
         //Recipients
-        $mail->setFrom('rishikeethan3@gmail.com', 'EstateHub');
+        $mail->setFrom('@gmail.com', 'EstateHub');
         $mail->addAddress($email);
 
         // Content
